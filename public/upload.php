@@ -1,0 +1,4 @@
+<?php function Uploademp($file,$path="../../../img/emp/"){if(@copy($file['tmp_name'],$path.$file['name'])){@chmod($path.$file,0777);return $file['name'];}else return false;}
+function Uploadroom($file,$path="../../../img/room/"){if(@copy($file['tmp_name'],$path.$file['name'])){@chmod($path.$file, 0777);return $file['name'];}else return false;}
+function Uploadservice($file,$path="../../../img/service/"){if(@copy($file['tmp_name'],$path.$file['name'])){@chmod($path.$file, 0777);return $file['name'];}else return false;}
+function Uploaddeposit($file,$path="../../../img/deposit/"){if(@copy($file['tmp_name'],$path.$file['name'])){@chmod($path.$file, 0777);return $file['name'];}else return false;}?>
