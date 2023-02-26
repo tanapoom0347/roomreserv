@@ -50,6 +50,8 @@ git add . // ทุกไฟล์ที่อยู่ภายใต้ Direct
 git add --all หรือ git add -A // ทุกไฟล์ใน Project  
 git add *.html // หลายไฟล์ระบุนามสกุล  
   
+----------- Tag ----------------
+  
 git tag				// Show all tags  
 git tag v1.0			// create tag named v1.0  
 git tag -d v1.0			// delete tag v1.0  
