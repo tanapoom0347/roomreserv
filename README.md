@@ -16,7 +16,7 @@ git config --global user.email yourEmail@example.com
 git config --list  
   
 pull = fetch->git diff->merge  
-sync = pull => push  
+sync = pull -> push  
   
 git init //ติดตั้งโฟลเดอร์ .git *สำหรับครั้งแรก  
 git status /**On Brunch Main และ เช็คไฟล์ Untrack หรือยังไม่ได้ Staged**/ Staged = เตรียมพร้อมขึ้นเวที  
