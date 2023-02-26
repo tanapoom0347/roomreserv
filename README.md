@@ -5,6 +5,8 @@ ls -a
 mkdir  
 cd  
 cd /d/Downloads/Downloads2/coding1/coding/roomreserv/  
+cd ../another_pc_gitrepo  
+  
 git init //ติดตั้งโฟลเดอร์ .git *สำหรับครั้งแรก  
 git status /**On Brunch Main และ เช็คไฟล์ Untrack หรือยังไม่ได้ Staged**/ Staged = เตรียมพร้อมขึ้นเวที  
 git remote -v  
@@ -13,9 +15,29 @@ git status /** Show Link GitHub **/
 git add . /*add ไฟล์เข้าไปอยู่ใน staged*/  
 git commit -m "First Commit" //Commit เซฟลงในเครื่อง และทำการคอมเมนท์  
 git log //อ่านค่า Commit และ ชื่อคอมเมนท์  
+$ git log --oneline
 git push origin main /*** push file ไปยัง Github ***/ จบ  
 git clone https://github.com/tanapoom0347/gitrepo.git another_pc_gitrepo //โคลนไฟล์มาโดยให้gitสร้างโฟเดอร์ใหม่กำหนดชื่อเองได้** /ถ้าไม่ใส่ชื่อคือโคลนชื่อrepoเป็นโฟเดอร์ใหม่**  
 git clone -b "v1.0" http://git.abc.net/git/abs.git my_abc  
+  
+/# ดึงความเปลี่ยนแปลงลงมาตรวจสอบ  
+git fetch  
+  
+$ git log origin/main --oneline  
+  
+/# นำไฟล์ที่ fetch มา merge  
+git merge origin/master  
+  
+/# Discard การเปลี่ยนแปลง OR Discard Modified  
+git restore readme.md  
+  
+/# ทำการ fetch และ merge ในทีเดียว  
+git pull origin master  
+  
+git add <file_name> // ระบุไฟล์ เช่น git add index.html about.html  
+git add . // ทุกไฟล์ที่อยู่ภายใต้ Directory ปัจจุบัน  
+git add --all หรือ git add -A // ทุกไฟล์ใน Project  
+git add *.html // หลายไฟล์ระบุนามสกุล  
   
 git tag				// Show all tags  
 git tag v1.0			// create tag named v1.0  
