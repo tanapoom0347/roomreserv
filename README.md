@@ -26,7 +26,7 @@ git checkout -b [branchname]
 git push -u origin [branchname]  /* -u ควรใช้กรณีครั้งแรกจะให้ git set-upstream ใช้คำสั่ง fetch,merge,pull,status โดยไม่ต้องใส่ argument แต่เราไม่ต้องใส่ “-u” ทุกครั้ง แค่ใส่ตอนที่เราต้องการกำหนด upstream ก็พอแล้ว ซึ่งส่วนมากก็คือครั้งแรกที่เรา push ของขึ้น repository ครับ  
 git commit -m "First Commit" //Commit เซฟลงในเครื่อง และทำการคอมเมนท์  
 git log //อ่านค่า Commit และ ชื่อคอมเมนท์  
-$ git log --oneline
+git log --oneline  
 git push origin main /*** push file ไปยัง Github ***/ จบ  
 git clone https://github.com/tanapoom0347/gitrepo.git another_pc_gitrepo //โคลนไฟล์มาโดยให้gitสร้างโฟเดอร์ใหม่กำหนดชื่อเองได้** /ถ้าไม่ใส่ชื่อคือโคลนชื่อrepoเป็นโฟเดอร์ใหม่**  
 git clone -b "v1.0" http://git.abc.net/git/abs.git my_abc  
@@ -34,7 +34,7 @@ git clone -b "v1.0" http://git.abc.net/git/abs.git my_abc
 /# ดึงความเปลี่ยนแปลงลงมาตรวจสอบ  
 git fetch  
   
-$ git log origin/main --oneline  
+git log origin/main --oneline  
   
 /# นำไฟล์ที่ fetch มา merge  
 git merge origin/master  
