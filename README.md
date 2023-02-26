@@ -2,10 +2,18 @@
 git --version  
 ls  
 ls -a  
+ls -al  
 mkdir  
 cd  
 cd /d/Downloads/Downloads2/coding1/coding/roomreserv/  
 cd ../another_pc_gitrepo  
+  
+git config --list --global  
+  
+git config --global user.name "Your Name"  
+git config --global user.email yourEmail@example.com  
+  
+git config --list  
   
 git init //ติดตั้งโฟลเดอร์ .git *สำหรับครั้งแรก  
 git status /**On Brunch Main และ เช็คไฟล์ Untrack หรือยังไม่ได้ Staged**/ Staged = เตรียมพร้อมขึ้นเวที  
@@ -13,6 +21,9 @@ git remote -v
 git remote add origin https://github.com/tanapoom0347/roomreserv.git <!-- add remote ของ GitHub !-->  
 git status /** Show Link GitHub **/  
 git add . /*add ไฟล์เข้าไปอยู่ใน staged*/  
+https://github.com/git-guides/git-add  
+git checkout -b [branchname]  
+git push -u origin [branchname]  /* -u ควรใช้กรณีครั้งแรกจะให้ git set-upstream ใช้คำสั่ง fetch,merge,pull,status โดยไม่ต้องใส่ argument แต่เราไม่ต้องใส่ “-u” ทุกครั้ง แค่ใส่ตอนที่เราต้องการกำหนด upstream ก็พอแล้ว ซึ่งส่วนมากก็คือครั้งแรกที่เรา push ของขึ้น repository ครับ  
 git commit -m "First Commit" //Commit เซฟลงในเครื่อง และทำการคอมเมนท์  
 git log //อ่านค่า Commit และ ชื่อคอมเมนท์  
 $ git log --oneline
