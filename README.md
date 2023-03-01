@@ -40,13 +40,13 @@ git fetch
 git log origin/main --oneline  
   
 /# นำไฟล์ที่ fetch มา merge  
-git merge origin/master  
+git merge origin/main  
   
 /# Discard การเปลี่ยนแปลง OR Discard Modified  
 git restore readme.md  
   
 /# ทำการ fetch และ merge ในทีเดียว  
-git pull origin master  
+git pull origin main  
   
 git add <file_name> // ระบุไฟล์ เช่น git add index.html about.html  
 git add . // ทุกไฟล์ที่อยู่ภายใต้ Directory ปัจจุบัน  
