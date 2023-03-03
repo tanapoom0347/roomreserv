@@ -19,6 +19,8 @@ pull = fetch->git diff->merge
 sync = pull -> push  
 
 https://sysadmin.psu.ac.th/2021/12/04/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5-github-clone-%E0%B8%A1%E0%B8%B2%E0%B9%80%E0%B8%89%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%87-folder/  
+https://www.youtube.com/watch?v=VmpZ9cu3IGQ  
+https://www.youtube.com/watch?v=6lL5ijLEoZg  
 โคลนเฉพาะFolder  
   
 git init //ติดตั้งโฟลเดอร์ .git *สำหรับครั้งแรก  
