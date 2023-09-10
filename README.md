@@ -37,6 +37,8 @@ git push -u origin [branchname]  /* -u ควรใช้กรณีครั�
 git commit -m "First Commit" //Commit เซฟลงในเครื่อง และทำการคอมเมนท์  
 git log //อ่านค่า Commit และ ชื่อคอมเมนท์  
 git log --oneline  
+git branch main -u origin/main  
+git push -u origin main  
 git push --set-upstream origin main  /***  
 git push origin main /*** push file ไปยัง Github ***/ จบ  
 git clone https://github.com/tanapoom0347/gitrepo.git another_pc_gitrepo //โคลนไฟล์มาโดยให้gitสร้างโฟเดอร์ใหม่กำหนดชื่อเองได้** /ถ้าไม่ใส่ชื่อคือโคลนชื่อrepoเป็นโฟเดอร์ใหม่**  
